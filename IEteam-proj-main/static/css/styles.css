@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pop_up {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-image: url(https://cdn.pixabay.com/photo/2022/01/11/19/43/avocado-6931344__340.jpg);
+    position: absolute;
+    animation: bg 3s 1 linear;
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #272629;
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(173, 173, 173);
+}
+
+@keyframes bg {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#weather_section {
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+}
+#weather_section span {
+    font-size: 13px;
+}
+
+
+
+main #team_profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px;
+    position: relative;
+    z-index: 99;
+    animation: op 5s 1 linear;
+    opacity: 1;
+}
+
+#index_main {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+main #title {
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+main #title h1 {
+
+    font-size: 8rem;
+    background-size: contain;
+    height: 300px;
+}
+
+main #title h2 {
+    position: relative;
+    font-size: 5rem;
+}
+
+main #title h2:nth-child(1) {
+    animation: tiop .4s 1 linear;
+}
+
+main #title h2:nth-child(2) {
+    animation: tiop .4s 1 linear .4s;
+}
+
+main #title h2:nth-child(3) {
+    animation: tiop .4s 1 linear .8s;
+}
+
+main #title h2:nth-child(4) {
+    animation: tiop .4s 1 linear 1.2s;
+}
+
+main #title h2:nth-child(5) {
+    animation: tiop .4s 1 linear 1.6s;
+}
+
+main #title h2:nth-child(6) {
+    animation: tiop .4s 1 linear 2s;
+}
+
+main #title h2:nth-child(7) {
+    animation: tiop .4s 1 linear 2.4s;
+}
+
+main #title h2:nth-child(8) {
+    animation: tiop .4s 1 linear 2.8s;
+}
+
+main #title h2:nth-child(9) {
+    animation: tiop .4s 1 linear 3.2s;
+}
+
+@keyframes tiop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#team_profile img {
+    transition: all 0.2s linear;
+    ;
+}
+
+#team_profile img:hover {
+    animation: blinker 1s linear;
+}
+
+@keyframes blinker {
+    25% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    75% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale (1);
+    }
+}
+
+
+
+
+main #team_profile .t_card {
+    position: relative;
+    margin: 35px;
+    width: 270px;
+    text-align: center;
+}
+
+main #team_profile .t_card .txt_box {
+    position: absolute;
+    bottom: -30px;
+    right: 8px;
+}
+
+main #team_profile .t_card .txt_box p {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: 'IM_Hyemin-Bold',sans-serif;
+}
+
+main #team_profile .t_card .txt_box p:first-child {
+    margin-bottom: 10px;
+}
+
+
+main #team_profile a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+main #info>ul .open_btn {
+    position: relative;
+    z-index: 99;
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main #info>ul .close_btn {
+    position: relative;
+    z-index: 99;
+    width: 800px;
+    margin: 50px auto;
+    display: none;
+    justify-content: space-between;
+}
+
+main #info>ul .open_btn span {
+    font-size: 15px;
+}
+
+main #info>ul .close_btn span {
+    font-size: 15px;
+}
+
+main #info>ul .open_list {
+    display: none;
+}
+
+.accordion-button::after {
+    filter: invert(1);
+
+}
+
+
+.accordion-body p {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+
+.accordion-body p span {
+    color: rgb(255, 193, 246);
+    font-size: 2.5rem;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.accordion-body p strong {
+    color: rgb(172, 175, 255);
+    font-size: 2.5rem;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.accordion-body p em {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: rgb(255, 137, 137);
+    font-weight: 700;
+}
+
+.write_box {
+    text-align: right;
+    /* background-color:pink; */
+    width: 55vw;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.form-control {
+    background-color: rgba(104, 104, 104, 0.315);
+    color: white;
+}
+
+main #info>ul li ul .write_box input[type=text] {
+    width: 500px;
+    /* background-color:aqua; */
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.w_b_btn {
+    margin: 10px;
+}
+
+#all_guestbook {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mycards {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    margin-bottom: 15px;
+    background-color: #36363849;
+    border: 2px solid gray !important;
+    border-radius: 30px;
+    width: 60vw;
+
+}
+
+.card-body {
+    color: white;
+    padding: 30px;
+
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+.blockquote-footer{
+    color: #d3d3d3;
+}
+.blockquote-footer::before{
+   content: "💖" !important;
+
+}
+.blockquote-footer::after{
+    content: "💖" !important;
+ 
+ }
+
+main #info>ul li ul .box {
+    width: 500px;
+    background-color: aqua;
+    margin: 50px auto;
+}
+
+
+main #info>ul li ul .box p:first-child {
+    margin-bottom: 15px;
+}
+
+
+.blockquote-footer {
+    margin-top: 5px;
+    text-align: right;
+}
+
+
+.mb-0 p{
+    padding-left: 15px;
+}
+.mb-0 p:nth-child(2){
+    padding-left: 25px;
+    padding-top: 5px;
+}
+/* 방명록할거면 어팬드해야하니깐 이부분은 그때지우면될거같습니다. */
+
+/* 개인페이지 css */
+#detail_main {
+    width: 75vw;
+    margin-left: 10vw;
+    margin-right: 15vw;
+    margin-top: 100px;
+}
+
+.all_box {
+    width: 18vw;
+    margin-right: 20px;
+    white-space: normal;
+    margin-left: -20px;
+}
+
+.all_box .image {
+    width: 18vw;
+}
+
+main>h1 {
+    margin: 50px;
+}
+
+.accordion {
+    z-index: 99;
+    width: 900px;
+    position: relative;
+    margin: 100px auto;
+    animation: op 5s 1 linear;
+    opacity: 1;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+main #all_info_box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main #all_info_box .all_box {
+    margin-right: 20px;
+}
+
+main #all_info_box .all_box .p_info {
+    margin: 20px;
+    text-align: center;
+}
+
+.p_info a {
+    text-decoration-line: none;
+}
+
+main #all_info_box .all_box .p_info p {
+    margin-bottom: 10px;
+}
+
+main #all_info_box .all_box .p_info p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.qr_code {
+    width: 10vmax;
+    height: 10vmax;
+    margin-bottom: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+.qr_code img {
+    width: 100%;
+}
+
+main #all_info_box .profile {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 10px;
+}
+
+main #all_info_box .profile dt {
+    margin-bottom: 40px;
+    font-size: 4rem;
+}
+
+main #all_info_box .profile div {
+
+    line-height: 1.6;
+    font-size: 1.05em;
+    white-space: normal;
+    border: 1px solid gray;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+#nickname {
+    border-color: gray;
+}
+
+#comment {
+    border-color: gray;
+}
+
+
+#pwds {
+    margin: 15px;
+    padding: 3px;
+    border: 0.5px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* footer css */
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 100px auto 0;
+    justify-content: space-evenly;
+    border-top: 1px solid #fff;
+    background-color: transparent;
+    width: 85%;
+
+
+}
+
+.footer .f_left {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .f_left li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+.footer .f_left li a {
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+.footer .f_left .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer .f_right {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .f_right li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+}
+
+.footer .f_right li a {
+    font-size: 1rem;
+    color: rgb(173, 173, 173);
+
+}
+
+.footer .f_right .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.pwform{
+    border:  0.5px solid gray;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+}
+.del{
+    border:  0.5px solid gray;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+
+}
+
+.update{
+    border:  0.5px solid gray;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 5px;
+}

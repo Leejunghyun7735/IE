@@ -1,0 +1,46 @@
+body {
+    background-color: #272629;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 50px 0;
+    text-align: center;
+    color: rgb(173, 173, 173);
+}
+
+main .w_b_btn {
+    text-align: right
+}
+
+main .w_b_btn button {
+
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: rgba(104, 104, 104, 0.315);
+    color: white;
+    border-color: gray;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.write_box {
+    text-align: right;
+    /* background-color:pink; */
+    width: 80vw;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid gray;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 25px;
+}

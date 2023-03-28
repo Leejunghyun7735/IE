@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+
+
+    <!-- 부트스트랩 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AJAX CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/weather.js"></script>
+
+    <link rel="stylesheet" href="url" />
+
+
+
+    <title>IE9 Team</title>
+
+
+
+    <script>
+
+        // 페이지가 로드되면 표시
+        $(document).ready(function () {
+            show_all_comment()
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id=weather_section>
+
+        <div id="weatherContainer">
+            <span id="city" style="font-family: 'Montserrat', sans-serif;"></span><img src="/static/img/gps_icon.png"
+                style="width:14px;">
+            <span id="weather" style="font-family: 'Montserrat', sans-serif;"></span><br>
+
+            <span id="other_temp" style="font-family: 'Montserrat', sans-serif;"></span>
+        </div>
+
+    </div>
+    <!-- <div class="pop_up"> -->
+    </div><!-- e:pop_up -->
+
+    <main id="index_main">
+
+        <div id="title">
+
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">I</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">E</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">'</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">9</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">_</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">아</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">이</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">구</h2>
+            <h2 style="font-family: 'IM_Hyemin-Bold',sans-serif;">~</h2>
+            <!-- <h1 style="background-image:url(/static/img/ie9_logo.png);">
+            </h1> -->
+
+        </div><!-- e:title -->
+
+
+
+
+        <div id="team_profile">
+            <a href='javascript:void(0);' onclick="go_detail_page('cy')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>서채연</p>
+                </div><!-- e:txt_box -->
+                <img src="/static/img/cy/chaeyeon.jpg" alt="1_img" style="width:280px; height: 280px;">
+            </a><!-- e:t_card c_1 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('jh')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>이정현</p>
+                </div><!-- e:txt_box -->
+                <img src="/static/img/jh/img_6557_720.jpg" alt="2_img" style="width:280px; height: 280px;">
+            </a><!-- e:t_card c_1 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('yw')" class="t_card c_1">
+                <div class="txt_box">
+                    <p>김영우</p>
+                </div><!-- e:txt_box -->
+                <img src="/static/img/yw/kimyoungwoo.jpg" alt="3_img" style="width:280px; height: 280px;">
+            </a><!-- e:t_card c_3 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('jk')" class="t_card c_4">
+                <div class="txt_box">
+                    <p>최진규</p>
+                </div><!-- e:txt_box -->
+                <img src="/static/img/jk/my2.jpg" alt="4_img" style="width:280px; height: 280px;">
+            </a><!-- e:t_card c_4 -->
+            <a href='javascript:void(0);' onclick="go_detail_page('hw')" class="t_card c_5">
+                <div class="txt_box">
+                    <p>장한울</p>
+                </div><!-- e:txt_box -->
+                <img src="/static/img/hw/64074b07a3e6d304ccfb2588aadaa088.jpg" alt="5_img"
+                    style="width:280px; height: 280px;">
+            </a><!-- e:t_card c_5 -->
+        </div><!-- e:team_profile -->
+
+
+        <!-- 팀 소개 보이기/숨기기 -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="background-color:#00000000; ">
+                <h2 class="accordion-header" id="headingOne">
+                    <button style="background-color:#00000000; color:white; padding-left: 47%;" class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        팀 소개
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p style="color:white;"><strong>I</strong> 4명과 <span>E</span> 한명이 모인 뉴비들의 반란!!
+                        <div style="line-height: 150%;">안녕하세요! 저희는 전원 비전공자+개발 생초보로 이루어진 병아리 팀 아이 구🐣입니다! <br>비록 누구는 이제 막
+                            걸음마를 떼고, 누구는 아직 걸음마도 못 뗀 병아리들이지만 서로가 서로에게 협력과 길잡이 역할을 해주면서 힘든 부분을 함께 떨쳐 나아가려고 하고,
+                            <br>각자 배움에 대한 열정만큼은 그 누구보다 뒤처지지 않는다고 자부할 수 있습니다!.🔥</div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="all_guestbook">
+            <div style="text-align: center; font-size: 20px; font-weight: bold; padding-bottom: 20px;">전체 방명록</div>
+            <div class="mycards" id="comment-all-list">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <ul class="f_right">
+            <li class="title">백 엔드</li>
+            <li>팀장 : 서채연</li>
+            <li>email : <a href="ssallyseo@gmail.com">ssallyseo@gmail.com</a></li>
+            <li>팀원 : 이정현</li>
+            <li>email : <a href="ark375@naver.comm">ark375@naver.com</a></li>
+            <li>주소:서울특별시 강남구 테헤란로44길 8 12층</li>
+            <li>사업자 등록번호 : 783-86-01715</li>
+        </ul><!-- e:f_right -->
+        <ul class="f_left">
+            <li class="title">프론트 엔드</li>
+            <li>팀원 : 장한울</li>
+            <li>email : <a href="jww1512@naver.com">jww1512@naver.com</a></li>
+            <li>팀원 : 김영우</li>
+            <li>email : <a href="duddn581@naver.com">duddn581@naver.com</a></li>
+            <li>팀원 : 최진규</li>
+            <li>email : <a href="kyuparfum@naver.com">kyuparfum@naver.com</a></li>
+        </ul><!-- e:f_left -->
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>

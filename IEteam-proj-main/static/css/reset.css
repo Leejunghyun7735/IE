@@ -1,0 +1,107 @@
+/* 웹글꼴연결@import */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Hi+Melody&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+address,
+blockquote,
+video,
+em,
+strong,
+span,
+sup,
+sub,
+del,
+s,
+q,
+a,
+img,
+table,
+thead,
+tbody,
+tfoot,
+th,
+tr,
+td,
+form,
+fieldset,
+legend,
+input,
+select,
+option,
+button,
+textarea,
+label,
+optgroup,
+header,
+main,
+footer,
+nav,
+section,
+article,
+aside,
+figure,
+figcaption,
+details {
+    /* font-family: 'Dokdo', cursive;
+    font-family: 'Hi Melody', cursive;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Nanum Brush Script', cursive; */
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #d3d3d3;
+    letter-spacing: -0.02em;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+table,
+tr,
+td,
+th {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+}
+
+.skip {
+    display: none;
+}
